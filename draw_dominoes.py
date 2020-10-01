@@ -88,10 +88,8 @@ def demo_dominoes(horz, output_file):
     ax.set_aspect('equal')
     ax.axis('off')
 
-    plt.tight_layout()
-    plt.savefig(output_file)    
+    plt.savefig(output_file, bbox_inches='tight', pad_inches=0)
     plt.show()
-    output_file.close()
 
 
 def draw_portrait(input_file, output_file):
